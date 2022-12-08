@@ -1,0 +1,36 @@
+:host{
+  display: block;
+}
+
+.inactive{
+  border: 1px solid #ccc;
+}
+
+.marked {
+  border: 3px solid blue;
+  animation: marked 0.3s ease-out forwards;
+}
+
+.loading-bar{
+  width: 200px;
+  height: 20px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.loading-bar-element {
+    width: 0;
+    height: 18px;
+    background-color: deepskyblue;
+    animation: loading 2.2s ease-out infinite;
+}
+
+@keyframes loading {
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 100%;
+  }
+}
